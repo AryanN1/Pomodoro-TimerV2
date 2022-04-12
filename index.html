@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pomodoro Timer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+		</script>
+  </head>
+  <body>
+   <div class="container">
+  <h1 class="border">Pomodoro Timer</h1>
+  <div class="container">
+    <div class="toggle-button-container" id="sessionlength-container">
+      <header>Session Length</header>
+      <time id="session-length"></time>
+      <div class="toggle-button-container__sub-container"></div>
+      <button class="toggle-timer" id="decrease-session" type="button">-
+        <button class="toggle-timer" id="increase-session" type="button">+</button>
+      </button>
+    </div>
+    <div class="toggle-button-container" id="breaklength-container">
+      <header>Break Length</header>
+      <time id="break-length"></time>
+      <div class="toggle-button-container__sub-container">
+        <button class="toggle-timer" id="decrease-break" type="button">-</button>
+        <button class="toggle-timer" id="increase-break" type="button">+</button>
+      </div>
+    </div>
+    <div id="countdown-container">
+      <header id="type">work session</header>
+      <time id="countdown"></time>
+    </div>
+    <div id="button-container">
+      <button id="start-session" type="button">Start</button>
+      <button id="stop-session" type="button">Stop</button>
+      <button id="reset-session" type="button">Reset</button>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+<footer>
+  <p class="footer">Made by Ary Naimi with &#9829;</p>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
